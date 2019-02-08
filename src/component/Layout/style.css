@@ -5,6 +5,14 @@
     grid-template-areas: 'header' 'body';
 }
 
+@media only screen and (min-width: 768px) {
+    .Layout {
+        grid-template-columns: 1fr minmax(768px, 1200px) 1fr;
+        grid-template-rows: auto 1fr;
+        grid-template-areas: 'header header header' '. body .';
+    }
+}
+
 .Layout-Header {
     grid-area: header;
     height: 100px;

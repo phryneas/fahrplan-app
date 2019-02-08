@@ -31,9 +31,7 @@ export class Layout extends React.Component<Props, State> {
         return (
             <div className="Layout">
                 <div className={'Layout-Header' + (big ? ' Layout-Header-big' : '')}>{Header}</div>
-                <Container className="Layout-Body" style={{ gridArea: 'body' }}>
-                    {children}
-                </Container>
+                <div className="Layout-Body">{children}</div>
             </div>
         );
     }
